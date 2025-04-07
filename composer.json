@@ -2,6 +2,7 @@
     "name": "sushil/curler",
     "description": "cURL wrapper for API calling",
     "type": "library",
+    "keywords": ["api","curler","curl"],
     "require": {
         "php": "^8.2",
         "psr/http-message": "^2.0",
@@ -29,6 +30,11 @@
             "email": "sushilkumbhar77@gmail.com"
         }
     ],
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "preferred-install": "dist"
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
