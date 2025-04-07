@@ -1,0 +1,33 @@
+{
+    "name": "sushil/curler",
+    "description": "cURL wrapper for API calling",
+    "type": "library",
+    "require": {
+        "php": "^8.4",
+        "psr/http-message": "2.0.x-dev",
+        "psr/log": "3.x-dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "12.2.x-dev",
+        "phpstan/phpstan": "2.1.x-dev"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Sushil\\Curler\\": "src/"
+        }
+    },
+    "autoload-dev": {
+       "psr-4": {
+           "Tests\\": "tests/"
+       }
+    },
+    "authors": [
+        {
+            "name": "Sushil Kumar",
+            "email": "sushilkumbhar77@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
