@@ -1,0 +1,46 @@
+# Ensure consistent line endings
+* text=auto
+
+# PHP files - enforce LF
+*.php text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+
+# Configuration files
+*.env text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.xml text eol=lf
+*.md text eol=lf
+
+# Exclude exported vendors from diff
+/vendor/* linguist-vendored
+
+# Binary files
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.gif binary
+*.ico binary
+*.pdf binary
+
+# Prevent diff for compiled files
+*.min.js -diff
+*.min.css -diff
+*.lock -diff
+*.zip -diff
+*.tar.gz -diff
+
+# License file - always LF
+LICENSE text eol=lf
+LICENSE.md text eol=lf
+
+# Ignore vendor folder diff
+/vendor/ export-ignore
+
+# Composer lock - normalize line endings
+composer.lock text eol=lf
+
+/node_modules/ export-ignore
