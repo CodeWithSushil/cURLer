@@ -1,0 +1,12 @@
+parameters:
+  level: 10
+  paths:
+    - src
+    - tests
+
+  reportUnmatchedIgnoredErrors: true
+  checkUninitializedProperties: true
+  checkBenevolentUnionTypes: true
+  rememberPossiblyImpureFunctionValues: true
+  reportPossiblyNonexistentGeneralArrayOffset: true
+  reportPossiblyNonexistentConstantArrayOffset: true
