@@ -9,7 +9,7 @@
          beStrictAboutOutputDuringTests="true"
          displayDetailsOnPhpunitDeprecations="true"
          failOnPhpunitDeprecation="true"
-         failOnRisky="true"
+         failOnRisky="true" colors="true"
          failOnWarning="true">
     <testsuites>
         <testsuite name="default">
