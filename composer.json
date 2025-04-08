@@ -10,7 +10,7 @@
         "vlucas/phpdotenv": "^5.6"
     },
     "require-dev": {
-        "phpunit/phpunit": "^12.1",
+        "pestphp/pest": "^3.8",
         "phpstan/phpstan": "^2.1"
     },
     "license": "MIT",
@@ -31,14 +31,17 @@
         }
     ],
     "scripts": {
-        "phpunit": "phpunit",
+        "pest": "pest",
         "phpstan": "phpstan",
-        "test": ["@phpunit","@phpstan"]
+        "test": ["@pest", "@phpstan"]
     },
     "config": {
         "optimize-autoloader": true,
         "sort-packages": true,
-        "preferred-install": "dist"
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
