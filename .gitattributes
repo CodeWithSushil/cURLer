@@ -44,3 +44,5 @@ LICENSE.md text eol=lf
 composer.lock text eol=lf
 
 /node_modules/ export-ignore
+.git/ export-ignore
+.github/ export-ignore
